@@ -1,0 +1,23 @@
+student:
+  name: Xavier Xu
+  age: 30
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+  datasource:
+    url: jdbc:sqlserver://localhost:1433;DatabaseName=Spring
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    username: sa
+    password: Abc123456
+  redis:
+    host: 127.0.0.1
+    port: 6379
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true #开启驼峰命名自动匹配,默认为false 完全匹配
+logging:
+  level:
+    com.ltd.demo3.mapper : debug #控制台输出SQL语句
+debug: true #开启Debug模式
